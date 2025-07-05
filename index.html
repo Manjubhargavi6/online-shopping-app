@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>online-shopping-app</title>
+    <style>
+      body {
+        background: gray;
+      }
+      h1 {
+        text-align: center;
+      }
+      .onlineshoppingcontainer {
+        width: 80%;
+        max-width: 850px;
+        background: white;
+        margin: 20px auto 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 4px 0px black;
+      }
+      .product-row {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        padding: 4px 10px;
+        border-radius: 5px;
+        margin-bottom: 8px;
+      }
+      button {
+        background: rgb(73, 73, 228);
+        border-radius: 10px;
+        width: 100px;
+        height: 40px;
+        margin-top: 5px;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background: blue;
+      }
+      #feedback {
+        position: fixed;
+        top: 20px;
+        right: 50px;
+        background-color: white;
+        padding: 10px;
+        display: none;
+      }
+      #totalPrice {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="onlineshoppingcontainer">
+      <h1>Online Shopping</h1>
+      <p id="feedback"></p>
+      <h2>Available products</h2>
+      <div id="productsContainer">
+        <!-- <div class="product-row">
+          <p>Laptop -Rs.50000</p>
+          <button>Add to cart</button>
+        </div> -->
+      </div>
+      <h2>My Cart</h2>
+      <div id="cartContainer">
+        <!-- <div class="product-row">
+          <p>Laptop- Rs.50000</p>
+          <button>Remove</button>
+        </div> -->
+      </div>
+      <h2 id="totalPrice">Rs.0</h2>
+      <h2>Actions</h2>
+      <button id="sortBtn">Sort by price</button>
+      <button id="clearBtn">Clear cart</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
