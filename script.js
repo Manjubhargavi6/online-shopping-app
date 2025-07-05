@@ -46,17 +46,17 @@ sortBtn.addEventListener("click", sortCart);
 
 function clearCart() {
   if (cart.length == 0) {
-    updateUserFeedback(`no item is there to clear`, "error");
+    updateUserFeedback(`There is no product in cart`, "error");
     return;
   }
   cart.length = 0;
-  updateUserFeedback(`add to cart is cleared`, "clear");
+  updateUserFeedback(`cart is cleared`, "clear");
   renderCartDetails();
 }
 
 function sortCart() {
   if (cart.length == 0) {
-    updateUserFeedback(`no item is there to sort in cart`, "error");
+    updateUserFeedback(`There is no product to sort`, "error");
     return;
   }
   cart.sort((item1, item2) => {
