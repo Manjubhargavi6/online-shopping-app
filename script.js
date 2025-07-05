@@ -30,7 +30,7 @@ const products = [
   },
   {
     id: 5,
-    name: "Headphones",
+    name: "Headphone",
     price: 500,
   },
 ];
